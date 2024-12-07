@@ -1,0 +1,54 @@
+* {
+  /* This is called the universal selector, this selects everything. */
+  font-family: monospace;
+}
+
+body {
+  font-size: 22px;
+}
+
+button, input, textarea, select {
+  font: inherit;
+  /* These elements do not inherit the font settings by default */
+}
+
+
+/* Grouping of the selectors - rules will be applied to both h1 and h2 elements */
+h1, h2 {
+  color: blue;
+}
+
+/* This selector selects any p that exists inside of a div */
+div p {
+  color: red;
+}
+/* The composite selectors have the higher specicity than the simple ones */
+
+p {
+  color: purple;
+  font-size: 15px;
+  /* The child elements have higher specificity than the parent ones */
+}
+
+p{
+  color: gray;
+}
+
+/* Id selector has the higher specificity than the class selector, which has the higher specificity
+than the element selector */
+#second {               
+  color: green;
+}
+
+p span {
+  text-transform: uppercase;
+  background-color: gold;
+}
+
+.gray {
+  color: red;
+}
+
+/* Higher specificity of the selector means higher overriding capacity */
+
+/* For more complex specificity comaparison, I can use the specificity calculator. */

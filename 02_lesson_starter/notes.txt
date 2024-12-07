@@ -1,0 +1,2 @@
+selector specificity -
+body > element selector > class selector > id selector 
